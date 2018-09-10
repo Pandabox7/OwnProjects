@@ -1,0 +1,59 @@
+public class User {
+    private String name;
+    private String email;
+    private int age;
+    private boolean password;
+    private int lastLoginTime;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isPassword() {
+        return password;
+    }
+
+    public void setPassword(boolean password) {
+        this.password = password;
+    }
+
+    public int getLastLoginTime() {
+        return lastLoginTime;
+    }
+
+    public void setLastLoginTime(int lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
+    }
+
+    public User(String name, String email, int age, boolean password, int lastLoginTime) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.password = password;
+        this.lastLoginTime = lastLoginTime;
+
+        System.out.println();
+
+    }
+}
