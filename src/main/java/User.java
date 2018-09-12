@@ -1,10 +1,12 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class User {
     private String name;
     private String email;
     private int age;
-    private boolean password;
-    private int lastLoginTime;
-
+    private String password;
+    private LocalDateTime lastLoginTime;
 
     public String getName() {
         return name;
@@ -30,23 +32,23 @@ public class User {
         this.age = age;
     }
 
-    public boolean isPassword() {
+    public String isPassword() {
         return password;
     }
 
-    public void setPassword(boolean password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public int getLastLoginTime() {
+    public LocalDateTime getLastLoginTime() {
         return lastLoginTime;
     }
 
-    public void setLastLoginTime(int lastLoginTime) {
+    public void setLastLoginTime(LocalDateTime lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
 
-    public User(String name, String email, int age, boolean password, int lastLoginTime) {
+    public User(String name, String email, int age, String password, LocalDateTime lastLoginTime) {
         this.name = name;
         this.email = email;
         this.age = age;
@@ -54,6 +56,9 @@ public class User {
         this.lastLoginTime = lastLoginTime;
 
         System.out.println();
+
+    }
+    public User() {
 
     }
 }
